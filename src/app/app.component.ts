@@ -27,11 +27,7 @@ this.service.newAddUser(formObj).subscribe(res=>{
   this.formObj = res
 })  }
 
-editUser(userId:any,editedNewData:any){
-  this.service.updateUser(userId,editedNewData).subscribe(res=>{
-    this.editNewData = res
-  })
-}
+
 deleteUser(userId: any) {
   this.service.deleteUser(userId).subscribe(res => {
     this.userId = res;

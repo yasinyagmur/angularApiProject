@@ -20,9 +20,7 @@ export class ServiceService {
   newAddUser(dataAdd:any) {
     return this.http.post(this.ApiUrl, dataAdd);
   }
-  updateUser(id: number | string, editedNewData:any) {
-    return this.http.put(this.ApiUrl + `/${id}`, editedNewData);
-  }
+
 
   deleteUser(id:number | string) {
     return this.http.delete(this.ApiUrl + `/${id}`)
