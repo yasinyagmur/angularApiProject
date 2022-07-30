@@ -50,6 +50,7 @@
     >
       Added User
     </button>
+    <button type="button" class="btn btn-primary">Show User List</button>
   </form>
   <br />
   <table class="table">
@@ -62,6 +63,7 @@
         <th scope="col">Delete</th>
       </tr>
     </thead>
+
     <tbody>
       <tr *ngFor="let item of data">
         <td>{{ item.firstName }}</td>

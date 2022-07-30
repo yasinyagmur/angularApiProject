@@ -22,6 +22,7 @@ export class AppComponent {
     })
   }
 
+
   addUser(formObj:any){
 this.service.newAddUser(formObj).subscribe(res=>{
   this.formObj = res
