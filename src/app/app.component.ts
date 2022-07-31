@@ -25,13 +25,20 @@ export class AppComponent {
 
   addUser(formObj:any){
 this.service.newAddUser(formObj).subscribe(res=>{
-  this.formObj = res
+  this.formObj = res;
+  this.service.getUserLıst().subscribe(response=>{
+    this.data=response
+  })
 })  }
 
 
 deleteUser(userId: any) {
   this.service.deleteUser(userId).subscribe(res => {
     this.userId = res;
+    this.service.getUserLıst().subscribe(response=>{
+      this.data=response
+    })
+    
 
   });
 }
