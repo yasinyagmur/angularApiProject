@@ -24,7 +24,7 @@ export class ServiceService {
   newAddUser(data:any) {
     return this.http.post(this.ApiUrl+"/ArgusUsers/PostArgusUser", data);
     //Mock Api
-    return this.http.post(this.ApiUrl, data); 
+    // return this.http.post(this.ApiUrl, data); 
 
   }
 
